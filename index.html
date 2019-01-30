@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tribute to Warren Buffet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tribute to Warren Buffet">
+    <meta name="keywords" content="Tribute, Warren Buffet, Warren-Buffet, Investor, Billionaire, Biography">
+    <meta name="author" content="David Guzman">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="warren_buffett.ico">
+</head>
+
+    <body>
+        <div id="main">
+            <!--Header-->
+            <header>
+                <h1 id="title">Warren Buffet</h1>
+                <blockquote>
+                    <div>
+                        <p id="quote">Success is not defined by a price tag or number.</p>
+                    </div>
+                    <cite>-Warren Buffet</cite>
+                </blockquote>
+            </header>
+
+                <div id="img-div">
+                    <img src="https://i2.cdn.turner.com/money/dam/assets/180507095143-warren-buffett-bitcoin-780x439.jpg" alt="Warren Buffet talking about bitcoin" id="image">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('image');
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function () {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    </script>
+
+                    <small id="img-caption">
+                        Warren Buffet discussing on how bit coin is
+                        considered <span class="text-danger">rat poison</span>.
+                    </small>
+                </div>
+
+            <section id="tribute-info">
+                <div class="container">
+                    <h2>Early Life</h2>
+                    <p>
+                        Warren Buffett was born in 1930 in Omaha, Nebraska.
+                        He started his education in Rose Hill Elementary School.
+                        He graduated in 1947 at Woodrow Wilson High School and
+                        had a quote in his yearbook that reads, "like math; a future stockbroker".
+                        He wanted to skipped college and go directly into business but he was
+                        turned down by his father. Buffett started to get interested in
+                        business at 7 years old, when he picked up a book at the library
+                        called <a href="https://www.amazon.com/One-Thousand-Ways-Make-1000-ebook/dp/B0170AKILI" target="_blank">One Thousand Ways to Make $1000</a>.
+                        In his first business venture, Buffet went door to door selling chewing gum,
+                        Coca Cola bottles, and weekly magazines! He also worked at
+                        his grandfather's grocery store. He always found a way to make money. In High school,
+                        he use to deliver news paper, sell golf balls and detail cars! In 1947, Warren Buffett
+                        went to school in the <span class="bold">University of Pennsylvania</span>.
+                        He later transferred to the <span class="bold">University of Nebraska</span>
+                        when he was 19 and graduated with the <span>
+                            Bachelor
+                            of Science in Business Adminitration
+                        </span>.
+                    </p>
+                    <h2>Career</h2>
+                    <p>
+                        Warren Buffet started as a salesperson in 1951 to 1954. 1952, is when he became lifelong friend with 
+                        Lorimer Davidson, Vice president of Geico. In 1970, is when he became a Chairman and CEO of Berkshire 
+                        Hathaway Inc. Warren Buffet wanted to work for Wall Street but was advise not to by his father and
+                        Graham, a member of the board of Geico. Buffet took a public speaking course made by Dale Carneige, 
+                        author of best selling book, 
+                        <a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034/ref=sr_1_3?ie=UTF8&qid=1539393008&sr=8-3&keywords=how+to+win+friends+and+influence+people+by+dale+carnegie" target= "_blank">
+                        How to Win Friends and Influence People
+                        </a>. In 1973, he got stock from the Washington Post company and later owned stocked from the 
+                        <span id="lobster" class="italic text-danger"> Coca Cola Company</span>. Buffet became a billionaire in 
+                        the late 1990s and started selling grade A shares with the price being $7,175 a share!
+                    </p>
+                    <p>Learn more on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Warren_Buffett" target="_blank">Wikipedia</a>!</p>
+                </div>
+            </section>
+            <footer><small>David Guzman &copy; 2018</small></footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,257 @@
+﻿/*Global*/
+body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    color: #382d27;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+#main {
+    background-color: #b4b4b4;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#lobster {
+    font-family: Lobster, cursive;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/*Blockquote*/
+blockquote {
+    border: hidden;
+    font-family: Georgia, serif;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+    blockquote div:before {
+        content: open-quote;
+        font-size: 6.25em;
+        margin-right: .25em;
+        vertical-align: -0.4em;
+        color: #7a7a7a;
+        line-height: 0.1em;
+    }
+
+    blockquote div::after {
+        content: close-quote;
+        font-size: 6.25em;
+        margin-left: .25em;
+        vertical-align: -0.4em;
+        color: #7a7a7a;
+        line-height: 0.1em;
+    }
+
+    blockquote cite {
+        display: block;
+        font-size: .875em;
+        font: italic;
+        margin-top: 5px;
+    }
+
+    blockquote p {
+        font-size: 1.5em;
+        font: italic;
+        display: inline;
+    }
+
+/*Image*/
+#img-div {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+    #img-div #img-caption {
+        display: block;
+        margin-top: .625em;
+        text-align: center;
+    }
+
+#image {
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    max-width: 100%;
+}
+
+    #image:hover {
+        opacity: 0.8;
+    }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+    #image {
+        width: 100%;
+    }
+
+    /*Blockquote*/
+    blockquote div {
+        width: 100%;
+    }
+
+        blockquote div::after {
+            display: block;
+            float: right;
+            clear: both;
+            margin-right: -.275em;
+        }
+}
+
+/*Tribute Info*/
+#tribute-info .container {
+    float: left;
+}
+
+#tribute-info p {
+    font-size: 1.125em;
+}
+
+#tribute-info h2 {
+    border-bottom: 1px solid #666;
+}
+
+#tribute-info .container a {
+    text-decoration: underline;
+    color: #000
+}
+
+    #tribute-info .container a:visited {
+        color: gray;
+    }
+
+    #tribute-info .container a:hover {
+        color: red;
+    }
+
+    #tribute-info .container a:active {
+        color: lightcoral;
+    }
+
+#tribute-info p:last-child {
+    margin-top: -5px;
+}
+
+#tribute-link {
+    font-weight: 900;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#tribute-info .container p span:last-child {
+    font-weight: 600;
+}
+
+footer {
+    float: right;
+    clear: both;
+}

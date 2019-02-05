@@ -1,2 +1,2 @@
 # WarrenBuffetTribute
-First webpage I mad
+First webpage I made.
